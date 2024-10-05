@@ -10,3 +10,104 @@
 section {
   padding-top: 5rem;
 }
+
+.gallery-img {
+  width: 100%;
+}
+
+#gallery .row > * {
+  padding: 0;
+}
+
+
+
+/* Pemerintah */
+.pemerintah-box {
+  position: relative;
+  background-color: #0c6efd;
+  border-radius: 10px;
+  height: 500px;
+  transform-style: preserve-3d;
+}
+
+.pemerintah-box::before {
+  content: 'RONGAWI';
+  position: absolute;
+  color: #fff;
+  font-size: 4em;
+  font-weight: bold;
+  font-style: italic;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.pemerintah-box:hover::before {
+  opacity: 0.2;
+}
+
+
+.pemerintah-box::after {
+  content: 'RONGAWI';
+  position: absolute;
+  color: #fff;
+  font-size: 4em;
+  font-weight: bold;
+  font-style: italic;
+  top: 350px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.pemerintah-box:hover::after {
+  opacity: 0.2;
+}
+
+
+.pemerintah-name {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5em;
+  opacity: 0;
+  transform: translate3d(0, 0, 50px);
+  transition: 0.5s;
+}
+
+.pemerintah-box:hover .pemerintah-name {
+  top: 20px;
+  opacity: 1;
+}
+
+.pmr {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate3d(-50%, 0, 100px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.pemerintah-box:hover .pmr {
+  opacity: 1;
+  bottom: 20px;
+}
+
+.pemerintah-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 80px);
+  max-width: 200px;
+  transition: 0.5s;
+}
+
+.pemerintah-box:hover .pemerintah-img {
+  transform: translate3d(-50%, -50%, 100px) scale(1.3);
+}
